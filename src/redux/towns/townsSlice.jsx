@@ -1,17 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const url1 = 'https://www.datos.gov.co/resource/xdk5-pm3f.json?departamento=Boyacá';
-const url2 = (town) => (`http://api.openweathermap.org/geo/1.0/direct?q=${town},CO,&limit=10&appid=2507b961d3c371ceef0ec43e83171164`);
-export const getCoordinates = createAsyncThunk('towns/getCoordinates',
-  async (town) => {
-    try {
-      const response = await fetch(url2(town));
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      return error.message();
-    }
-  });
+
 export const getTowns = createAsyncThunk('towns/getTowns',
   async () => {
     try {
