@@ -24,7 +24,9 @@ export const getTowns = createAsyncThunk('towns/getTowns',
 
 const initialState = {
   towns: [],
+  townsSearch: [],
   isLoading: true,
+  searching: false,
 };
 
 const townsSlice = createSlice({
@@ -33,7 +35,15 @@ const townsSlice = createSlice({
   reducers: {
     searchTown: (state, action) => ({
       ...state,
-      towns: state.towns.filter((town) => town.townName.toLowerCase().includes(action.payload)),
+      townsSearch: state.towns.filter(
+        (town) => town.townName.toLowerCase().includes(action.payload),
+      ),
+      searching: true,
+    }),
+    setInicial: (state) => ({
+      ...state,
+      townsSearch: [],
+      searching: false,
     }),
   },
   extraReducers: (builder) => {
@@ -54,5 +64,5 @@ const townsSlice = createSlice({
   },
 });
 
-export const { searchTown } = townsSlice.actions;
+export const { searchTown, setInicial } = townsSlice.actions;
 export default townsSlice.reducer;

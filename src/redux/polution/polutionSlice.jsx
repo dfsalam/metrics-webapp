@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const getCoordinates = async (town) => {
   try {
-    const url2 = `http://api.openweathermap.org/geo/1.0/direct?q=${town},CO,&limit=10&appid=2507b961d3c371ceef0ec43e83171164`;
+    const url2 = `https://api.openweathermap.org/geo/1.0/direct?q=${town},CO,&limit=10&appid=2507b961d3c371ceef0ec43e83171164`;
     const response = await fetch(url2);
     const data = await response.json();
     let newData = data.filter((item) => item.state === 'Boyacá');
@@ -16,7 +16,7 @@ export const getPolution = createAsyncThunk('polution/getPolution',
   async (town) => {
     try {
       const { lat, lon } = await getCoordinates(town);
-      const url3 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=2507b961d3c371ceef0ec43e83171164`;
+      const url3 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=2507b961d3c371ceef0ec43e83171164`;
       const response = await fetch(url3);
       const data = await response.json();
       return data;

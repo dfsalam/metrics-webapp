@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import TownContainer from '../components/TownContainer';
-import { getTowns } from '../redux/towns/townsSlice';
+import { getTowns, setInicial } from '../redux/towns/townsSlice';
 import Search from '../components/Search';
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getTowns());
+    dispatch(setInicial());
   }, [dispatch]);
 
   if (isLoading) {

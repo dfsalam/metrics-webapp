@@ -11,7 +11,7 @@ describe('Towns redux state tests', () => {
   it('Expect to initially set towns to an empty object', () => {
     const state = store.getState().towns;
     const initialState = {
-      towns: [], isLoading: true,
+      towns: [], isLoading: true, townsSearch: [], searching: false,
     };
     expect(state).toEqual(initialState);
   });
@@ -29,7 +29,9 @@ describe('Towns redux state tests', () => {
     const state = {
       towns: {
         towns,
+        townsSearch: [],
         isLoading: true,
+        searching: false,
       },
     };
     const store = mockStore(state);
