@@ -1,0 +1,34 @@
+.town-card {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+}
+
+.town-card:nth-of-type(odd) {
+  background-color: rgb(193, 60, 111);
+}
+
+.town-card:nth-of-type(even) {
+  background-color: rgb(238, 80, 134);
+}
+
+.town-button {
+  margin-top: 5px;
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.town-text {
+  font-family: 'Gill Sans', serif;
+  color: white;
+  margin-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.arrow {
+  font-variation-settings: 'FILL' 0;
+}

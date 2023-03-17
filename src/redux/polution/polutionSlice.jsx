@@ -19,7 +19,6 @@ export const getPolution = createAsyncThunk('polution/getPolution',
       const url3 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=2507b961d3c371ceef0ec43e83171164`;
       const response = await fetch(url3);
       const data = await response.json();
-      console.log(data);
       return data;
     } catch (error) {
       return error.message();
