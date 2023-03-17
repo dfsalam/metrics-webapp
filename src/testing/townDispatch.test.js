@@ -1,8 +1,8 @@
 import { screen, render as rtlRender } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
-import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import { BrowserRouter } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import Town from '../components/Town';
 import testSelector from '../redux/testSelector';
 import store from '../redux/store';
@@ -30,5 +30,5 @@ describe('Town clicks', () => {
     userEvent.click(btn);
 
     expect(useAppDispatch).toHaveBeenCalled();
-  });  
+  });
 });

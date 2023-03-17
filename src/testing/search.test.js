@@ -1,5 +1,4 @@
 import { screen, render as rtlRender, fireEvent } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import Search from '../components/Search';
@@ -27,7 +26,7 @@ describe('Search event', () => {
     render(<Search />);
     const input = screen.getByPlaceholderText('Search...');
     input.value = 'sa';
-    fireEvent.change(input, { target: { value:'sa' }})
+    fireEvent.change(input, { target: { value: 'sa' } });
     expect(useAppDispatch).toHaveBeenCalled();
-  });  
+  });
 });
