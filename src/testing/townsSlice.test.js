@@ -29,7 +29,7 @@ describe('Towns redux state tests', () => {
     const state = {
       towns: {
         towns,
-        townsSearch:[],
+        townsSearch: [],
         isLoading: true,
         searching: false,
       },
