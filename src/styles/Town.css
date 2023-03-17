@@ -1,7 +1,7 @@
 .town-card {
   display: flex;
   flex-direction: column;
-  width: 33.33333%;  
+  width: 33.33333%;
 }
 
 .town-card:nth-of-type(odd) {
@@ -15,9 +15,9 @@
 .town-button {
   margin-top: 5px;
   background-color: inherit;
-  border:0;
-  padding: 0;  
-  align-self: flex-end;  
+  border: 0;
+  padding: 0;
+  align-self: flex-end;
 }
 
 .town-text {
@@ -27,7 +27,6 @@
   padding-bottom: 0;
   margin-bottom: 5px;
   margin-top: 2px;
-  
 }
 
 .arrow {

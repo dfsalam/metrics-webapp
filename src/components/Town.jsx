@@ -9,7 +9,6 @@ const Town = ({ townId, townName }) => {
   const dispatch = useAppDispatch();
   const path = `details/${townName}`;
   const handler = (name) => {
-    console.log(name);
     dispatch(getPolution(name));
   };
   return (
