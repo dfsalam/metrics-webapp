@@ -12,7 +12,7 @@ const Detail = ({ town }) => {
     co, no, no2, o3, pm25, pm10, so2,
   } = polution.list[0].components;
   return (
-    <>
+    <div className="detail-container">
       <h2>{town}</h2>
       <h3>
         Latitud:
@@ -80,7 +80,7 @@ const Detail = ({ town }) => {
         {' '}
         μg/m3
       </h3>
-    </>
+    </div>
   );
 };
 

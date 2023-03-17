@@ -1,0 +1,21 @@
+.detail-container {
+  background-color: rgb(225, 84, 150);  
+}
+
+.detail-container h2 {
+  font-family: 'Gill Sans', serif;
+  color: white;
+  margin-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.detail-container h3 {
+  font-family: 'Gill Sans', serif;
+  color: white;
+  margin-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
