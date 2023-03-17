@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Towns redux state tests Expect to display towns data from mockStore 1`] = `[Function]`;
