@@ -30,7 +30,12 @@ const initialState = {
 const townsSlice = createSlice({
   name: 'towns',
   initialState,
-  reducers: {},
+  reducers: {
+    searchTown: (state, action) => ({
+      ...state,
+      towns: state.towns.filter((town) => town.townName.toLowerCase().includes(action.payload)),
+    }),
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getTowns.pending, (state) => ({
@@ -49,4 +54,5 @@ const townsSlice = createSlice({
   },
 });
 
+export const { searchTown } = townsSlice.actions;
 export default townsSlice.reducer;
