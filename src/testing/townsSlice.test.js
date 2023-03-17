@@ -16,14 +16,13 @@ describe('Towns redux state tests', () => {
     expect(state).toEqual(initialState);
   });
   it('Expect to display towns data from mockStore', () => {
-    const towns = 
-    [
+    const towns = [
       {
-        "region": "Región Centro Oriente",
-        "c_digo_dane_del_departamento": "15",
-        "departamento": "Boyacá",
-        "c_digo_dane_del_municipio": "15.476",
-        "municipio": "Motavita"
+        region: 'Región Centro Oriente',
+        c_digo_dane_del_departamento: '15',
+        departamento: 'Boyacá',
+        c_digo_dane_del_municipio: '15.476',
+        municipio: 'Motavita',
       },
     ];
 
@@ -39,8 +38,7 @@ describe('Towns redux state tests', () => {
         <BrowserRouter><Town townId="15.476" townName="Motavita" /></BrowserRouter>
       </Provider>,
     );
-    const name = screen.getByText('Motavita');
-    expect(name).not.toBeNull;
+    expect(screen.getByText('Motavita')).toBeDefined();
     expect(store.getState).toMatchSnapshot();
   });
 });

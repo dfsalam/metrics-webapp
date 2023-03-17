@@ -3,7 +3,6 @@ import { render as rtlRender } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import Detail from '../components/Detail';
 import Search from '../components/Search';
-import Town from '../components/Town';
 import TownContainer from '../components/TownContainer';
 import store from '../redux/store';
 
@@ -19,7 +18,7 @@ describe('Components render correctly', () => {
       <Detail />,
     );
     expect(tree).toMatchSnapshot();
-  });  
+  });
   test('Search', () => {
     const tree = render(<Search />);
     expect(tree).toMatchSnapshot();

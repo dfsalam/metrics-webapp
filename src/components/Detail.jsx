@@ -89,7 +89,6 @@ const Detail = ({ town }) => {
       </h3>
     </div>
   );
-
 };
 
 Detail.propTypes = {
