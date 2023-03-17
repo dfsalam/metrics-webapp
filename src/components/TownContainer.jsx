@@ -4,7 +4,24 @@ import { useAppSelector } from '../redux/redux-hooks';
 import '../styles/TownContainer.css';
 
 const TownContainer = () => {
-  const { towns } = useAppSelector((state) => state.towns);
+  const { towns, townsSearch, searching } = useAppSelector((state) => state.towns);
+
+  if (searching) {
+    return (
+      <div>
+        <h2 className="cntTitle">STATS BY TOWN</h2>
+        <div className="cnt-body">
+          {townsSearch.map((item) => (
+            <Town
+              key={item.townId}
+              townId={item.townId}
+              townName={item.townName}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
