@@ -17,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <input type="text" id="searchInput" placeholder="Search..." onChange={() => handler(inp.value)} />
+    <input type="text" id="searchInput" placeholder="Search..." onChange={(e) => handler(e.target.value)} />
   );
 };
 
