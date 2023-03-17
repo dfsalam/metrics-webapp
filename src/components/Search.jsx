@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAppDispatch } from '../redux/redux-hooks';
 import { getTowns, searchTown } from '../redux/towns/townsSlice';
+import '../styles/Search.css';
 
 const Search = () => {
   const dispatch = useAppDispatch();
@@ -16,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <input id="searchInput" placeholder="Write your desired town" onChange={() => handler(inp.value)} />
+    <input type="text" id="searchInput" placeholder="Search..." onChange={() => handler(inp.value)} />
   );
 };
 
