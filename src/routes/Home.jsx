@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import TownContainer from '../components/TownContainer';
 import { getTowns } from '../redux/towns/townsSlice';
+import Search from '../components/Search';
 
 const Home = () => {
   const dispatch = useAppDispatch();
@@ -18,7 +19,12 @@ const Home = () => {
     );
   }
 
-  return (<TownContainer />);
+  return (
+    <div>
+      <Search />
+      <TownContainer />
+    </div>
+  );
 };
 
 export default Home;
