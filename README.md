@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon](https://dfsalam.github.io/spacehub/build/index.html)
+- [Live demo](https://boyaca-pollution-metrics.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
