@@ -7,7 +7,7 @@ import { getPolution } from '../redux/polution/polutionSlice';
 
 const Town = ({ townId, townName }) => {
   const dispatch = useAppDispatch();
-  const path = `${townName}`;
+  const path = `details/${townName}`;
   const handler = (name) => {
     console.log(name);
     dispatch(getPolution(name));

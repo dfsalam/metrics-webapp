@@ -4,6 +4,9 @@ import { useAppSelector } from '../redux/redux-hooks';
 
 const Detail = ({ town }) => {
   const { polution } = useAppSelector((state) => state.polution);
+  if (polution.length === 0) {
+    return (<h3>Is loading...</h3>);
+  }
   const { lat, lon } = polution.coord;
   const {
     co, no, no2, o3, pm25, pm10, so2,
