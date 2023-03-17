@@ -68,6 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live demo](https://boyaca-pollution-metrics.onrender.com/)
+- [Features video](https://www.loom.com/share/2640cc59eab74577b1c9e6f98022f389)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
