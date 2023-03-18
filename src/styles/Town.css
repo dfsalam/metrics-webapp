@@ -1,7 +1,7 @@
 .town-card {
   display: flex;
   flex-direction: column;
-  width: 33.33333%;
+  width: 50%;
 }
 
 .town-card:nth-of-type(odd) {

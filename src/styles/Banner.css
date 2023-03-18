@@ -1,0 +1,35 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.banner-container {
+  background-color: rgb(252, 81, 147);
+  display: flex;
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  min-height: 250px;  
+  justify-content: end;
+  align-items: end;  
+}
+
+.banner-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 0 15px 15px 0;  
+}
+
+.banner-text h2, h3 {
+  color: white;
+  margin: 0;
+  padding: 0;   
+}

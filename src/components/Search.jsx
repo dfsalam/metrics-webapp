@@ -6,13 +6,7 @@ import '../styles/Search.css';
 const Search = () => {
   const dispatch = useAppDispatch();
   const handler = (desired) => {
-    // inp.addEventListener('keydown', (event) => {
-    //   const { key } = event;
-    //   if (key === 'Backspace') {
-    //     dispatch(getTowns());
-    //   }
-    // });
-    dispatch(searchTown(desired));
+    dispatch(searchTown(desired.toLowerCase()));
   };
 
   return (

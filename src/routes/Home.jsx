@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from '../redux/redux-hooks';
 import TownContainer from '../components/TownContainer';
 import { getTowns, setInicial } from '../redux/towns/townsSlice';
 import Search from '../components/Search';
+import Banner from '../components/Banner';
 
 const Home = () => {
   const dispatch = useAppDispatch();
@@ -22,6 +23,7 @@ const Home = () => {
 
   return (
     <div>
+      <Banner />
       <Search />
       <TownContainer />
     </div>
