@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Detail from '../components/Detail';
 import Search from '../components/Search';
 import TownContainer from '../components/TownContainer';
+import Banner from '../components/Banner';
 import store from '../redux/store';
 
 const render = (component) => rtlRender(
@@ -25,6 +26,10 @@ describe('Components render correctly', () => {
   });
   test('TownContainer', () => {
     const tree = render(<TownContainer />);
+    expect(tree).toMatchSnapshot();
+  });
+  test('Banner', () => {
+    const tree = render(<Banner />);
     expect(tree).toMatchSnapshot();
   });
 });
