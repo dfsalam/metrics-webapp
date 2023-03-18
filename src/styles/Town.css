@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-}
-
-.town-card:nth-of-type(odd) {
   background-color: rgb(193, 60, 111);
 }
 
-.town-card:nth-of-type(even) {
-  background-color: rgb(238, 80, 134);
+.town-card-darker {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(237, 101, 149);
 }
 
 .town-button {
@@ -23,10 +23,9 @@
 .town-text {
   font-family: 'Gill Sans', serif;
   color: white;
-  margin-left: 5px;
-  padding-bottom: 0;
-  margin-bottom: 5px;
-  margin-top: 2px;
+  margin: 2px 5px 7px 0;
+  padding-bottom: 0;  
+  text-align: right;
 }
 
 .arrow {

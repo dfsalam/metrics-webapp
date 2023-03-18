@@ -11,13 +11,17 @@ const TownContainer = () => {
       <div>
         <h2 className="cntTitle">STATS BY TOWN</h2>
         <div className="cnt-body">
-          {townsSearch.map((item) => (
-            <Town
-              key={item.townId}
-              townId={item.townId}
-              townName={item.townName}
-            />
-          ))}
+          {townsSearch.map((item, index) => {
+            const temp = index % 4 === 0 || (index + 1) % 4 === 0;
+            return (
+              <Town
+                key={item.townId}
+                townId={item.townId}
+                townName={item.townName}
+                darker={temp}
+              />
+            );
+          })}
         </div>
       </div>
     );
@@ -27,13 +31,17 @@ const TownContainer = () => {
     <div>
       <h2 className="cntTitle">STATS BY TOWN</h2>
       <div className="cnt-body">
-        {towns.map((item) => (
-          <Town
-            key={item.townId}
-            townId={item.townId}
-            townName={item.townName}
-          />
-        ))}
+        {towns.map((item, index) => {
+          const temp = index % 4 === 0 || (index + 1) % 4 === 0;
+          return (
+            <Town
+              key={item.townId}
+              townId={item.townId}
+              townName={item.townName}
+              darker={temp}
+            />
+          );
+        })}
       </div>
     </div>
   );

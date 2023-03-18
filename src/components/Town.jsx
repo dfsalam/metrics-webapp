@@ -5,15 +5,15 @@ import { useAppDispatch } from '../redux/redux-hooks';
 import { getPolution } from '../redux/polution/polutionSlice';
 import '../styles/Town.css';
 
-const Town = ({ townId, townName }) => {
+const Town = ({ townId, townName, darker }) => {
   const dispatch = useAppDispatch();
+  const classTag = darker ? 'town-card-darker' : 'town-card';
   const path = `details/${townName}`;
   const handler = (name) => {
     dispatch(getPolution(name));
   };
   return (
-    <div className="town-card">
-
+    <div className={classTag}>
       <button
         className="town-button"
         type="button"
@@ -26,7 +26,6 @@ const Town = ({ townId, townName }) => {
           </span>
         </NavLink>
       </button>
-
       <h2 className="town-text">{townName}</h2>
       <h3 className="town-text">
         ID:
@@ -40,6 +39,7 @@ const Town = ({ townId, townName }) => {
 Town.propTypes = {
   townId: PropTypes.string.isRequired,
   townName: PropTypes.string.isRequired,
+  darker: PropTypes.bool.isRequired,
 };
 
 export default Town;
