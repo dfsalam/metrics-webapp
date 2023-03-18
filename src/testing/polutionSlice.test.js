@@ -52,7 +52,7 @@ describe('Polution redux state tests', () => {
         <Detail town="Tunja" />
       </Provider>,
     );
-    const name = screen.getByText('CO (Carbon monoxide), 293.73 μg/m3');
+    const name = screen.getByText('CO');
     expect(name).not.toBeNull();
     expect(store.getState).toMatchSnapshot();
   });

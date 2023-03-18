@@ -5,6 +5,7 @@ import Detail from '../components/Detail';
 import Search from '../components/Search';
 import TownContainer from '../components/TownContainer';
 import Banner from '../components/Banner';
+import Pollutant from '../components/Pollutant';
 import store from '../redux/store';
 
 const render = (component) => rtlRender(
@@ -30,6 +31,10 @@ describe('Components render correctly', () => {
   });
   test('Banner', () => {
     const tree = render(<Banner />);
+    expect(tree).toMatchSnapshot();
+  });
+  test('Pollutant', () => {
+    const tree = render(<Pollutant />);
     expect(tree).toMatchSnapshot();
   });
 });

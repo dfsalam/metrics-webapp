@@ -14,7 +14,7 @@ const provider = (component) => (
 describe('Components render correctly', () => {
   test('Town', () => {
     const tree = renderer
-      .create(provider(<Town />))
+      .create(provider(<Town townId="15.001" townName="Tunja" darker={false} />))
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

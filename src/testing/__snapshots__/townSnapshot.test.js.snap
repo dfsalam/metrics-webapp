@@ -6,12 +6,13 @@ exports[`Components render correctly Town 1`] = `
 >
   <button
     className="town-button"
+    id="15.001"
     onClick={[Function]}
     type="button"
   >
     <a
       className=""
-      href="/details/undefined"
+      href="/details/Tunja"
       onClick={[Function]}
     >
       <span
@@ -23,11 +24,14 @@ exports[`Components render correctly Town 1`] = `
   </button>
   <h2
     className="town-text"
-  />
+  >
+    TUNJA
+  </h2>
   <h3
     className="town-text"
   >
     ID:
+    15.001
   </h3>
 </div>
 `;

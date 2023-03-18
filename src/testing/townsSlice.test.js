@@ -40,7 +40,7 @@ describe('Towns redux state tests', () => {
         <BrowserRouter><Town townId="15.476" townName="Motavita" /></BrowserRouter>
       </Provider>,
     );
-    expect(screen.getByText('Motavita')).toBeDefined();
+    expect(screen.getByText('MOTAVITA')).toBeDefined();
     expect(store.getState).toMatchSnapshot();
   });
 });
