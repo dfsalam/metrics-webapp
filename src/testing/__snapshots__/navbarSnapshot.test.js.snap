@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components render correctly Navbar 1`] = `
+<nav>
+  <a
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+  >
+    <span
+      className="material-symbols-outlined"
+    >
+      arrow_back_ios_new
+    </span>
+  </a>
+  <h1
+    className="nav-title"
+  >
+    Polution Data
+  </h1>
+  <div>
+    <span
+      className="material-symbols-outlined"
+    >
+      keyboard_voice
+    </span>
+    <span
+      className="material-symbols-outlined"
+    >
+      settings
+    </span>
+  </div>
+</nav>
+`;

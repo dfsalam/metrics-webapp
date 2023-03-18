@@ -1,0 +1,20 @@
+.pol-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.pol-container:nth-child(even) {
+  background-color: rgb(193, 60, 111);
+}
+
+.pol-container:nth-child(odd) {
+  background-color: rgb(233, 73, 135);
+}
+
+.pol-text {
+  font-family: 'Gill Sans', sans-serif;
+  margin-right: 15px;
+  margin-left: 15px;
+}

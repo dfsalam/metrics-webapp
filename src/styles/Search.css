@@ -1,0 +1,15 @@
+input {
+  background-color: #ec4c8a;
+  height: 30px;
+  width: 99%;
+}
+
+input::placeholder {
+  color: white;
+  font-family: 'Lato', serif;
+}
+
+input[type="text"] {
+  color: white;
+  font-family: 'Lato', serif;
+}

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components render correctly Town 1`] = `
+<div
+  className="town-card"
+>
+  <button
+    className="town-button"
+    id="15.001"
+    onClick={[Function]}
+    type="button"
+  >
+    <a
+      className=""
+      href="/details/Tunja"
+      onClick={[Function]}
+    >
+      <span
+        className="material-symbols-outlined arrow"
+      >
+        arrow_circle_right
+      </span>
+    </a>
+  </button>
+  <h2
+    className="town-text"
+  >
+    TUNJA
+  </h2>
+  <h3
+    className="town-text"
+  >
+    ID:
+    15.001
+  </h3>
+</div>
+`;

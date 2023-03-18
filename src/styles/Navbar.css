@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ec4c8a;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings: 'FILL' 1;
+  padding: 0 5px;
+}
+
+.nav-title {
+  color: white;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
