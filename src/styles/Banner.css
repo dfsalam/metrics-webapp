@@ -1,6 +1,7 @@
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background-color: rgb(237, 101, 149);
 }
 
 body::-webkit-scrollbar {
@@ -14,7 +15,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
-  min-height: 250px;
+  min-height: 300px;
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -33,4 +34,6 @@ h3 {
   color: white;
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
 }

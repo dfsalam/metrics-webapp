@@ -9,8 +9,12 @@ const Home = () => {
   const dispatch = useAppDispatch();
   const {
     isLoading,
+    towns,
+    townsSearch,
   } = useAppSelector((state) => state.towns);
 
+  const length = townsSearch.length > 0 ? townsSearch.length : towns.length;
+  const sub1 = `${length} towns`;
   useEffect(() => {
     dispatch(getTowns());
     dispatch(setInicial());
@@ -23,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <Banner />
+      <Banner title="BOYACÁ" sub1={sub1} />
       <Search />
       <TownContainer />
     </div>

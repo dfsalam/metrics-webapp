@@ -26,7 +26,7 @@ const Town = ({ townId, townName, darker }) => {
           </span>
         </NavLink>
       </button>
-      <h2 className="town-text">{townName}</h2>
+      <h2 className="town-text">{townName.toUpperCase()}</h2>
       <h3 className="town-text">
         ID:
         {townId}
